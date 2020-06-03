@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Practice1.SeleniumMavenProject.SwitchingWindows_Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.426 s - in Practice1.SeleniumMavenProject.SwitchingWindows_Test

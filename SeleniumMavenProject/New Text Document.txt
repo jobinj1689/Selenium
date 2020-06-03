@@ -1,0 +1,4 @@
+Challenges in testing
+
+1.If version of your chrome drover is updated then you need to install a new chrome driver
+2. Cannot identify hidden text, for this you need too use javascript executor
