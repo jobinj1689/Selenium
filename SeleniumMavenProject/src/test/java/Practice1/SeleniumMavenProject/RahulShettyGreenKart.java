@@ -1,33 +1,53 @@
 package Practice1.SeleniumMavenProject;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class RahulShettyGreenKart {
+import PageObject.GreenKartObjects;
 
+public class RahulShettyGreenKart {
+	
+	
+	public static Logger log = LogManager.getLogger(RahulShettyGreenKart.class.getName());
+	
 	@Test
-	public void GreenKart() {
+	public void GreenKart() throws IOException {
+	
+
+		BasicConfigurator.configure();  // Add this code for log4j
 		
 		int j=0;
 		String[] productneeded = {"Cucumber", "Brocolli", "Carrot", "Tomato"};
 		
 		String url = "https://rahulshettyacademy.com/seleniumPractise/#/";
 		WebDriver driver = WebdriverSetup.Webdriverconfig(url);
+		GreenKartObjects GkPageObject = new GreenKartObjects(driver);
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(".//resources/data.properties");
+		prop.load(fis);
+				
 		
-		//driver.findElement(By.xpath("//input[@type='search']")).sendKeys("testttt");
-		List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
+		//Using page object instead of this
+		//List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
+	    
+		System.out.println("No of productrs on page: " + GkPageObject.products.size());
 		
-		System.out.println("No of productrs on page: " + products.size());
-		
-		for (int i=0; i< products.size(); i++)
+		for (int i=0; i< GkPageObject.products.size(); i++)
 		{
-			String[] productname = products.get(i).getText().split("-");
+			String[] productname = GkPageObject.products.get(i).getText().split("-");
 			String formattedName = productname[0].trim();
 			System.out.println(formattedName);
 			
@@ -35,18 +55,35 @@ public class RahulShettyGreenKart {
 			if(productNeededList.contains(formattedName))
 			{
 				j++;
-				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
-				
+				//driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
+				GkPageObject.productAddtoCart().get(i).click();
+				log.info("Item Clicked");
 			}
 			
 			if(j== productneeded.length) 
 			{
 				break;
-				
 			}
-			
 		}	
 		
+		// Using Page Factory objects
+		GkPageObject.cart().click();
+		GkPageObject.proceedToCheckout().click();
+		log.info("Applying Promo Code");
+		GkPageObject.promoCode().sendKeys(prop.getProperty("promoCode"));
+		GkPageObject.applyPromo().click();
+		System.out.println(GkPageObject.promoInfo().getText());
+		GkPageObject.placeOrder().click();
+		
+		Select s = new Select(GkPageObject.selectCountry());
+		s.selectByVisibleText("India");
+		
+		GkPageObject.checkAgree().click();
+		GkPageObject.proceed().click();
+		
+		
+		
+		/* -- OLD Code in normal way
 		driver.findElement(By.xpath("//img[@alt='Cart']")).click();
 		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();;
 		
@@ -62,7 +99,7 @@ public class RahulShettyGreenKart {
 		driver.findElement(By.xpath("//input[@class='chkAgree']")).click();
 		driver.findElement(By.xpath("//button[contains(text(),'Proceed')]")).click();
 	
-		
+		*/
 	}
 	
 	

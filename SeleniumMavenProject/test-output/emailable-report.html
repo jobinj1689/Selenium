@@ -8,46 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">547,642</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,300</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Practice1.SeleniumMavenProject.SwitchingFrames</td><td><a href="#m0">SwitchFrames</a></td><td rowspan="1">1590912762990</td><td rowspan="1">23203</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.AlertHandling</td><td><a href="#m1">AlertTest</a></td><td rowspan="1">1590912652261</td><td rowspan="1">26892</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.Amazon_Action</td><td><a href="#m2">Action</a></td><td rowspan="1">1590912629543</td><td rowspan="1">22708</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.ClickingOnLinks</td><td><a href="#m3">ClickonLink</a></td><td rowspan="1">1590912699825</td><td rowspan="1">63155</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.Facebook</td><td><a href="#m4">Login</a></td><td rowspan="1">1590912956108</td><td rowspan="1">57832</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.MakeMyTrip</td><td><a href="#m5">Auto_Suggestive_Dropdown</a></td><td rowspan="1">1590913014092</td><td rowspan="1">127896</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.RahulShettyGreenKart</td><td><a href="#m6">GreenKart</a></td><td rowspan="1">1590912595212</td><td rowspan="1">34307</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.SpiceJet</td><td><a href="#m7">Dropdown_Selection</a></td><td rowspan="1">1590912787673</td><td rowspan="1">167615</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.SwitchingWindows</td><td><a href="#m8">SwitchWindow</a></td><td rowspan="1">1590912679161</td><td rowspan="1">20660</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.Tes1</td><td><a href="#m9">demotestng</a></td><td rowspan="1">1590913014077</td><td rowspan="1">9</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.Tes3</td><td><a href="#m10">Demo3</a></td><td rowspan="1">1590912956026</td><td rowspan="1">78</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.RahulShettyGreenKart</td><td><a href="#m0">GreenKart</a></td><td rowspan="1">1591524762132</td><td rowspan="1">22192</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Practice1.SeleniumMavenProject.SwitchingFrames#SwitchFrames</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DELL&apos;, ip: &apos;192.168.43.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at Practice1.SeleniumMavenProject.WebdriverSetup.Webdriverconfig(WebdriverSetup.java:17)
-	at Practice1.SeleniumMavenProject.SwitchingFrames.SwitchFrames(SwitchingFrames.java:15)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:31019/status] to be available after 20004 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 38 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 39 more
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Practice1.SeleniumMavenProject.AlertHandling#AlertTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Practice1.SeleniumMavenProject.Amazon_Action#Action</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Practice1.SeleniumMavenProject.ClickingOnLinks#ClickonLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Practice1.SeleniumMavenProject.Facebook#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">Practice1.SeleniumMavenProject.MakeMyTrip#Auto_Suggestive_Dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">Practice1.SeleniumMavenProject.RahulShettyGreenKart#GreenKart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">Practice1.SeleniumMavenProject.SpiceJet#Dropdown_Selection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">Practice1.SeleniumMavenProject.SwitchingWindows#SwitchWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">Practice1.SeleniumMavenProject.Tes1#demotestng</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">Practice1.SeleniumMavenProject.Tes3#Demo3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">Practice1.SeleniumMavenProject.RahulShettyGreenKart#GreenKart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
