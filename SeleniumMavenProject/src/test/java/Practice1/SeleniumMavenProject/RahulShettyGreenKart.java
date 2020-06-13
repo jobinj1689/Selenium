@@ -7,9 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +26,7 @@ public class RahulShettyGreenKart {
 	public void GreenKart() throws IOException {
 	
 
-		BasicConfigurator.configure();  // Add this code for log4j
+		//BasicConfigurator.configure();  // Add this code for log4j
 		
 		int j=0;
 		String[] productneeded = {"Cucumber", "Brocolli", "Carrot", "Tomato"};
@@ -36,7 +35,7 @@ public class RahulShettyGreenKart {
 		WebDriver driver = WebdriverSetup.Webdriverconfig(url);
 		GreenKartObjects GkPageObject = new GreenKartObjects(driver);
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(".//resources/data.properties");
+		FileInputStream fis = new FileInputStream(".//src/main/resources/data.properties");
 		prop.load(fis);
 				
 		
@@ -57,7 +56,10 @@ public class RahulShettyGreenKart {
 				j++;
 				//driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 				GkPageObject.productAddtoCart().get(i).click();
+				
 				log.info("Item Clicked");
+				
+				//log.error("Testinnngg");
 			}
 			
 			if(j== productneeded.length) 
