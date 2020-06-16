@@ -1,8 +1,16 @@
 package Practice1.SeleniumMavenProject;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -29,7 +37,20 @@ public class WebdriverSetup {
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys(text);	
 	}
 
+	
+	public static void getscreenshot(String classname, String testname) throws IOException {
+		
+		DateFormat dateFormat = new SimpleDateFormat("ddMMyyy HHmmss");
+		Date date = new Date();
+		String current_Date = dateFormat.format(date); 
+		
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String destination = System.getProperty("user.dir")+"\\Screenshot\\"+classname+"_"+testname+ "_" +current_Date+".png"; 
+		FileUtils.copyFile(source, new File (destination));	
+	}
 
+	
 	@BeforeTest
 	public void BeforeTestExecution() {
 	

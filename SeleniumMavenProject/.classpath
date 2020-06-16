@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="Utility/" kind="src" output="target/classes" path="src/main/java">
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
@@ -29,14 +33,6 @@
 	<classpathentry kind="lib" path="F:/Softwares/commons-io-2.7/commons-io-2.7-sources.jar"/>
 	<classpathentry kind="lib" path="F:/Softwares/commons-io-2.7/commons-io-2.7-tests.jar"/>
 	<classpathentry kind="lib" path="F:/Softwares/commons-io-2.7/commons-io-2.7-test-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/admin/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar" sourcepath="C:/Users/admin/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.apache.logging.log4j"/>
-			<attribute name="maven.artifactId" value="log4j-api"/>
-			<attribute name="maven.version" value="2.13.3"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

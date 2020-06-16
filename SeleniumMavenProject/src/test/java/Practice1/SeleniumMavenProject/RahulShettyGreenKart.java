@@ -1,5 +1,7 @@
 package Practice1.SeleniumMavenProject;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,20 +15,25 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
+
+import com.aventstack.extentreports.ExtentReports;
 
 import PageObject.GreenKartObjects;
+import Utilities.ExtentReportsTest;
 
+@Listeners(Listeners_New.class)
 public class RahulShettyGreenKart {
-	
 	
 	public static Logger log = LogManager.getLogger(RahulShettyGreenKart.class.getName());
 	
 	@Test
 	public void GreenKart() throws IOException {
 	
-
-		//BasicConfigurator.configure();  // Add this code for log4j
+		
+		ExtentReportsTest.Reports("GreenKart");
 		
 		int j=0;
 		String[] productneeded = {"Cucumber", "Brocolli", "Carrot", "Tomato"};
@@ -68,6 +75,8 @@ public class RahulShettyGreenKart {
 			}
 		}	
 		
+		Assert.assertEquals(false, true);
+		
 		// Using Page Factory objects
 		GkPageObject.cart().click();
 		GkPageObject.proceedToCheckout().click();
@@ -75,6 +84,7 @@ public class RahulShettyGreenKart {
 		GkPageObject.promoCode().sendKeys(prop.getProperty("promoCode"));
 		GkPageObject.applyPromo().click();
 		System.out.println(GkPageObject.promoInfo().getText());
+		
 		GkPageObject.placeOrder().click();
 		
 		Select s = new Select(GkPageObject.selectCountry());
@@ -83,6 +93,7 @@ public class RahulShettyGreenKart {
 		GkPageObject.checkAgree().click();
 		GkPageObject.proceed().click();
 		
+		ExtentReportsTest.ReportsFlush();
 		
 		
 		/* -- OLD Code in normal way

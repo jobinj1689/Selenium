@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 <listeners>
-<listener class-name = "Practice1.SeleniumMavenProject.Listeners"/> 
+<listener class-name = "Practice1.SeleniumMavenProject.Listeners_New"/> 
 </listeners>
 
   <test thread-count="5" name="Test">
