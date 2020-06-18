@@ -37,6 +37,7 @@ public class Listeners_New extends WebdriverSetup implements ITestListener {
 		//Use this code while running test in parallel lec no 214
 		extentTest.get().log(Status.PASS , "Test Execution Succeesfull");
 	}
+	
 
 	@Override
 	public void onTestFailure(ITestResult result) {
