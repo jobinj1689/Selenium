@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="tests">
 
 <listeners>
 <listener class-name = "Practice1.SeleniumMavenProject.Listeners_New"/> 
@@ -14,13 +14,10 @@
       <class name="Practice1.SeleniumMavenProject.SwitchingWindows"/>
       <class name="Practice1.SeleniumMavenProject.ClickingOnLinks"/>
       <class name="Practice1.SeleniumMavenProject.SwitchingFrames"/>
-     <!--   <class name="Practice1.SeleniumMavenProject.Tes2"/> -->
-      <class name="Practice1.SeleniumMavenProject.SpiceJet"/>
-      <class name="Practice1.SeleniumMavenProject.Tes3"/>
+      <class name="Practice1.SeleniumMavenProject.SpiceJet"/>     
       <class name="Practice1.SeleniumMavenProject.Facebook"/>
-      <class name="Practice1.SeleniumMavenProject.Tes1"/>
       <class name="Practice1.SeleniumMavenProject.MakeMyTrip"/>
-      <class name="Practice1.SeleniumMavenProject.WebdriverSetup"/>
+      <!--  <class name="Practice1.SeleniumMavenProject.WebdriverSetup"/>-->
     </classes>
-  </test> <!-- Test -->
+</test> <!-- Test -->    
 </suite> <!-- Suite -->

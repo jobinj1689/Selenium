@@ -1,16 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 266.295 s <<< FAILURE! - in TestSuite
-Practice1.SeleniumMavenProject.ClickingOnLinks.ClickonLink  Time elapsed: 26.897 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DELL', ip: '192.168.43.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_121'
-Driver info: driver.version: ChromeDriver
-	at Practice1.SeleniumMavenProject.ClickingOnLinks.ClickonLink(ClickingOnLinks.java:19)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:46806/status] to be available after 20000 ms
-	at Practice1.SeleniumMavenProject.ClickingOnLinks.ClickonLink(ClickingOnLinks.java:19)
-Caused by: java.util.concurrent.TimeoutException
-	at Practice1.SeleniumMavenProject.ClickingOnLinks.ClickonLink(ClickingOnLinks.java:19)
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 422.627 s <<< FAILURE! - in TestSuite
+Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart  Time elapsed: 26.523 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart(RahulShettyGreenKart.java:78)
 

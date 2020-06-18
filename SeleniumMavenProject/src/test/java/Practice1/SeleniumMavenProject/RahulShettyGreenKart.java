@@ -33,7 +33,7 @@ public class RahulShettyGreenKart {
 	public void GreenKart() throws IOException {
 	
 		
-		ExtentReportsTest.Reports("GreenKart");
+		//ExtentReportsTest.Reports();
 		
 		int j=0;
 		String[] productneeded = {"Cucumber", "Brocolli", "Carrot", "Tomato"};
@@ -93,7 +93,7 @@ public class RahulShettyGreenKart {
 		GkPageObject.checkAgree().click();
 		GkPageObject.proceed().click();
 		
-		ExtentReportsTest.ReportsFlush();
+		//ExtentReportsTest.ReportsFlush();
 		
 		
 		/* -- OLD Code in normal way

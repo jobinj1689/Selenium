@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -38,7 +39,7 @@ public class WebdriverSetup {
 	}
 
 	
-	public static void getscreenshot(String classname, String testname) throws IOException {
+	public static String getscreenshot(String classname, String testname) throws IOException {
 		
 		DateFormat dateFormat = new SimpleDateFormat("ddMMyyy HHmmss");
 		Date date = new Date();
@@ -47,7 +48,8 @@ public class WebdriverSetup {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir")+"\\Screenshot\\"+classname+"_"+testname+ "_" +current_Date+".png"; 
-		FileUtils.copyFile(source, new File (destination));	
+		FileUtils.copyFile(source, new File (destination));
+		return destination;
 	}
 
 	
@@ -58,11 +60,11 @@ public class WebdriverSetup {
 	
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void AfterTestExecution() {
 	
-		System.out.println("*******Execution of Programs has completed*********");
-	
+		System.out.println("*******Test Execution of Programs has completed*********");
+		driver.close();
 	}
 	
 	
