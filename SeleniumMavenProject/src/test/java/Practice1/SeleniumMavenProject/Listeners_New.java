@@ -78,6 +78,4 @@ public class Listeners_New extends WebdriverSetup implements ITestListener {
 		extent.flush();
 	}
 
-	
-
 }

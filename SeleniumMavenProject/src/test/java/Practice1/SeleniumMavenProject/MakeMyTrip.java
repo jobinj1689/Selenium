@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class MakeMyTrip {
+public class MakeMyTrip extends WebdriverSetup{
 
 	@Test
 	public void Auto_Suggestive_Dropdown() {

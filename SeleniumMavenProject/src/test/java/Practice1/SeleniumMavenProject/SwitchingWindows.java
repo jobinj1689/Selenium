@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class SwitchingWindows {
+public class SwitchingWindows extends WebdriverSetup{
 
 	@Test
 	public void SwitchWindow() {

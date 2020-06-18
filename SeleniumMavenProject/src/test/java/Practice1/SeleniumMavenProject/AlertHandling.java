@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class AlertHandling {
+public class AlertHandling extends WebdriverSetup {
 
 	@Test
 	public void AlertTest() {

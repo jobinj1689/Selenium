@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class SwitchingFrames {
+public class SwitchingFrames extends WebdriverSetup{
 
 	@Test
 	public void SwitchFrames() {

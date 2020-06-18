@@ -1,9 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="9" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="0" started-at="2020-06-18T18:16:49 IST" finished-at="2020-06-18T18:16:49 IST">
+  <suite name="Suite" duration-ms="207851" started-at="2020-06-18T19:58:20 IST" finished-at="2020-06-18T20:01:47 IST">
     <groups>
     </groups>
+    <test name="Test" duration-ms="207851" started-at="2020-06-18T19:58:20 IST" finished-at="2020-06-18T20:01:47 IST">
+      <class name="Practice1.SeleniumMavenProject.RahulShettyGreenKart">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.RahulShettyGreenKart@67c33749]" name="BeforeTestExecution" is-config="true" duration-ms="11" started-at="2020-06-18T19:58:20 IST" finished-at="2020-06-18T19:58:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="FAIL" signature="GreenKart()[pri:0, instance:Practice1.SeleniumMavenProject.RahulShettyGreenKart@67c33749]" name="GreenKart" duration-ms="21778" started-at="2020-06-18T19:58:20 IST" finished-at="2020-06-18T19:58:41 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart(RahulShettyGreenKart.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GreenKart -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.RahulShettyGreenKart@67c33749]" name="AfterTestExecution" is-config="true" duration-ms="337" started-at="2020-06-18T19:58:43 IST" finished-at="2020-06-18T19:58:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.RahulShettyGreenKart -->
+      <class name="Practice1.SeleniumMavenProject.Facebook">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.Facebook@3d6f0054]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T20:01:13 IST" finished-at="2020-06-18T20:01:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:Practice1.SeleniumMavenProject.Facebook@3d6f0054]" name="Login" duration-ms="14649" started-at="2020-06-18T20:01:13 IST" finished-at="2020-06-18T20:01:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.Facebook@3d6f0054]" name="AfterTestExecution" is-config="true" duration-ms="851" started-at="2020-06-18T20:01:27 IST" finished-at="2020-06-18T20:01:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.Facebook -->
+      <class name="Practice1.SeleniumMavenProject.ClickingOnLinks">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.ClickingOnLinks@71238fc2]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T19:59:25 IST" finished-at="2020-06-18T19:59:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="ClickonLink()[pri:0, instance:Practice1.SeleniumMavenProject.ClickingOnLinks@71238fc2]" name="ClickonLink" duration-ms="47873" started-at="2020-06-18T19:59:25 IST" finished-at="2020-06-18T20:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonLink -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.ClickingOnLinks@71238fc2]" name="AfterTestExecution" is-config="true" duration-ms="47" started-at="2020-06-18T20:00:13 IST" finished-at="2020-06-18T20:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.ClickingOnLinks -->
+      <class name="Practice1.SeleniumMavenProject.SwitchingWindows">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.SwitchingWindows@fa49800]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T19:59:12 IST" finished-at="2020-06-18T19:59:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="SwitchWindow()[pri:0, instance:Practice1.SeleniumMavenProject.SwitchingWindows@fa49800]" name="SwitchWindow" duration-ms="13189" started-at="2020-06-18T19:59:12 IST" finished-at="2020-06-18T19:59:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwitchWindow -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.SwitchingWindows@fa49800]" name="AfterTestExecution" is-config="true" duration-ms="126" started-at="2020-06-18T19:59:25 IST" finished-at="2020-06-18T19:59:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.SwitchingWindows -->
+      <class name="Practice1.SeleniumMavenProject.AlertHandling">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.AlertHandling@662b4c69]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T19:58:58 IST" finished-at="2020-06-18T19:58:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="AlertTest()[pri:0, instance:Practice1.SeleniumMavenProject.AlertHandling@662b4c69]" name="AlertTest" duration-ms="11240" started-at="2020-06-18T19:58:58 IST" finished-at="2020-06-18T19:59:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertTest -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.AlertHandling@662b4c69]" name="AfterTestExecution" is-config="true" duration-ms="2116" started-at="2020-06-18T19:59:10 IST" finished-at="2020-06-18T19:59:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.AlertHandling -->
+      <class name="Practice1.SeleniumMavenProject.Amazon_Action">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.Amazon_Action@fba92d3]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T19:58:43 IST" finished-at="2020-06-18T19:58:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="Action()[pri:0, instance:Practice1.SeleniumMavenProject.Amazon_Action@fba92d3]" name="Action" duration-ms="12623" started-at="2020-06-18T19:58:43 IST" finished-at="2020-06-18T19:58:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Action -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.Amazon_Action@fba92d3]" name="AfterTestExecution" is-config="true" duration-ms="2229" started-at="2020-06-18T19:58:56 IST" finished-at="2020-06-18T19:58:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.Amazon_Action -->
+      <class name="Practice1.SeleniumMavenProject.SpiceJet">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.SpiceJet@16a0ee18]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T20:00:26 IST" finished-at="2020-06-18T20:00:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="Dropdown_Selection()[pri:0, instance:Practice1.SeleniumMavenProject.SpiceJet@16a0ee18]" name="Dropdown_Selection" duration-ms="35723" started-at="2020-06-18T20:00:26 IST" finished-at="2020-06-18T20:01:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dropdown_Selection -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.SpiceJet@16a0ee18]" name="AfterTestExecution" is-config="true" duration-ms="11327" started-at="2020-06-18T20:01:01 IST" finished-at="2020-06-18T20:01:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.SpiceJet -->
+      <class name="Practice1.SeleniumMavenProject.MakeMyTrip">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.MakeMyTrip@505fc5a4]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T20:01:28 IST" finished-at="2020-06-18T20:01:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="FAIL" signature="Auto_Suggestive_Dropdown()[pri:0, instance:Practice1.SeleniumMavenProject.MakeMyTrip@505fc5a4]" name="Auto_Suggestive_Dropdown" duration-ms="16637" started-at="2020-06-18T20:01:28 IST" finished-at="2020-06-18T20:01:45 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused" placeholder="From" value=""> is not clickable at point (253, 261). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL', ip: '172.20.10.13', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1f7cf774c29b84610b3a51dda559ab84]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused" placeholder="From" value=""> is not clickable at point (253, 261). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL', ip: '172.20.10.13', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1f7cf774c29b84610b3a51dda559ab84
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at Practice1.SeleniumMavenProject.MakeMyTrip.Auto_Suggestive_Dropdown(MakeMyTrip.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Auto_Suggestive_Dropdown -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.MakeMyTrip@505fc5a4]" name="AfterTestExecution" is-config="true" duration-ms="327" started-at="2020-06-18T20:01:47 IST" finished-at="2020-06-18T20:01:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.MakeMyTrip -->
+      <class name="Practice1.SeleniumMavenProject.SwitchingFrames">
+        <test-method status="PASS" signature="BeforeTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.SwitchingFrames@2a54a73f]" name="BeforeTestExecution" is-config="true" duration-ms="1" started-at="2020-06-18T20:00:13 IST" finished-at="2020-06-18T20:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestExecution -->
+        <test-method status="PASS" signature="SwitchFrames()[pri:0, instance:Practice1.SeleniumMavenProject.SwitchingFrames@2a54a73f]" name="SwitchFrames" duration-ms="12351" started-at="2020-06-18T20:00:13 IST" finished-at="2020-06-18T20:00:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwitchFrames -->
+        <test-method status="PASS" signature="AfterTestExecution()[pri:0, instance:Practice1.SeleniumMavenProject.SwitchingFrames@2a54a73f]" name="AfterTestExecution" is-config="true" duration-ms="418" started-at="2020-06-18T20:00:25 IST" finished-at="2020-06-18T20:00:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestExecution -->
+      </class> <!-- Practice1.SeleniumMavenProject.SwitchingFrames -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

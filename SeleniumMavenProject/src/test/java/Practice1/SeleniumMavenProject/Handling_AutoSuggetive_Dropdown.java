@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Handling_AutoSuggetive_Dropdown {
+public class Handling_AutoSuggetive_Dropdown extends WebdriverSetup {
 
 	public void AutoSuggetive_Dropdown() {
 		

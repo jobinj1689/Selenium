@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class HandlingTableGrids_Test {
+public class HandlingTableGrids_Test extends WebdriverSetup {
 
 	public void HandlingTableGrid() {
 		

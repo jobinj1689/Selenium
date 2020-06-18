@@ -17,7 +17,7 @@
       <class name="Practice1.SeleniumMavenProject.SpiceJet"/>     
       <class name="Practice1.SeleniumMavenProject.Facebook"/>
       <class name="Practice1.SeleniumMavenProject.MakeMyTrip"/>
-      <!--  <class name="Practice1.SeleniumMavenProject.WebdriverSetup"/>-->
+      <class name="Practice1.SeleniumMavenProject.WebdriverSetup"/>
     </classes>
 </test> <!-- Test -->    
 </suite> <!-- Suite -->

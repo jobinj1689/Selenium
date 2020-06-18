@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class ClickingOnLinks {
+public class ClickingOnLinks extends WebdriverSetup{
 	
 	@Test
 	public void ClickonLink() throws InterruptedException {

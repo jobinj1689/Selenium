@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class HandlingCalendar_Test {
+public class HandlingCalendar_Test extends WebdriverSetup {
 	
 	
 	public void HandlingCalendar() {

@@ -1,8 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 422.627 s <<< FAILURE! - in TestSuite
-Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart  Time elapsed: 26.523 s  <<< FAILURE!
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 213.161 s <<< FAILURE! - in TestSuite
+Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart  Time elapsed: 22.553 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart(RahulShettyGreenKart.java:78)
+
+Practice1.SeleniumMavenProject.MakeMyTrip.Auto_Suggestive_Dropdown  Time elapsed: 17.867 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused" placeholder="From" value=""> is not clickable at point (253, 261). Other element would receive the click: <div data-cy="outsideModal" class="loginModal displayBlock modalLogin dynHeight personal "></div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DELL', ip: '172.20.10.13', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1f7cf774c29b84610b3a51dda559ab84
+	at Practice1.SeleniumMavenProject.MakeMyTrip.Auto_Suggestive_Dropdown(MakeMyTrip.java:26)
 

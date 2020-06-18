@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class SpiceJet {
+public class SpiceJet extends WebdriverSetup{
 
 	@Test
 	public void Dropdown_Selection() {

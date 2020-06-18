@@ -25,7 +25,7 @@ import PageObject.GreenKartObjects;
 import Utilities.ExtentReportsTest;
 
 @Listeners(Listeners_New.class)
-public class RahulShettyGreenKart {
+public class RahulShettyGreenKart extends WebdriverSetup {
 	
 	public static Logger log = LogManager.getLogger(RahulShettyGreenKart.class.getName());
 	
@@ -39,7 +39,7 @@ public class RahulShettyGreenKart {
 		String[] productneeded = {"Cucumber", "Brocolli", "Carrot", "Tomato"};
 		
 		String url = "https://rahulshettyacademy.com/seleniumPractise/#/";
-		WebDriver driver = WebdriverSetup.Webdriverconfig(url);
+		Webdriverconfig(url);
 		GreenKartObjects GkPageObject = new GreenKartObjects(driver);
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(".//src/main/resources/data.properties");

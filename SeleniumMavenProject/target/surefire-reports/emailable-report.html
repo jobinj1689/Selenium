@@ -9,7 +9,46 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">207,851</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody></table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Practice1.SeleniumMavenProject.MakeMyTrip</td><td><a href="#m0">Auto_Suggestive_Dropdown</a></td><td rowspan="1">1592490688704</td><td rowspan="1">16637</td></tr><tr class="failedodd"><td rowspan="1">Practice1.SeleniumMavenProject.RahulShettyGreenKart</td><td><a href="#m1">GreenKart</a></td><td rowspan="1">1592490500086</td><td rowspan="1">21778</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.AlertHandling</td><td><a href="#m2">AlertTest</a></td><td rowspan="1">1592490538771</td><td rowspan="1">11240</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.Amazon_Action</td><td><a href="#m3">Action</a></td><td rowspan="1">1592490523916</td><td rowspan="1">12623</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.ClickingOnLinks</td><td><a href="#m4">ClickonLink</a></td><td rowspan="1">1592490565448</td><td rowspan="1">47873</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.Facebook</td><td><a href="#m5">Login</a></td><td rowspan="1">1592490673201</td><td rowspan="1">14649</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.SpiceJet</td><td><a href="#m6">Dropdown_Selection</a></td><td rowspan="1">1592490626145</td><td rowspan="1">35723</td></tr><tr class="passedodd"><td rowspan="1">Practice1.SeleniumMavenProject.SwitchingFrames</td><td><a href="#m7">SwitchFrames</a></td><td rowspan="1">1592490613371</td><td rowspan="1">12351</td></tr><tr class="passedeven"><td rowspan="1">Practice1.SeleniumMavenProject.SwitchingWindows</td><td><a href="#m8">SwitchWindow</a></td><td rowspan="1">1592490552131</td><td rowspan="1">13189</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Practice1.SeleniumMavenProject.MakeMyTrip#Auto_Suggestive_Dropdown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; aria-autocomplete=&quot;list&quot; aria-controls=&quot;react-autowhatever-1&quot; class=&quot;react-autosuggest__input react-autosuggest__input--open react-autosuggest__input--focused&quot; placeholder=&quot;From&quot; value=&quot;&quot;&gt; is not clickable at point (253, 261). Other element would receive the click: &lt;div data-cy=&quot;outsideModal&quot; class=&quot;loginModal displayBlock modalLogin dynHeight personal &quot;&gt;&lt;/div&gt;
+  (Session info: chrome=83.0.4103.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DELL&apos;, ip: &apos;172.20.10.13&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61014}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1f7cf774c29b84610b3a51dda559ab84
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Practice1.SeleniumMavenProject.MakeMyTrip.Auto_Suggestive_Dropdown(MakeMyTrip.java:26)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Practice1.SeleniumMavenProject.RahulShettyGreenKart#GreenKart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at Practice1.SeleniumMavenProject.RahulShettyGreenKart.GreenKart(RahulShettyGreenKart.java:78)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Practice1.SeleniumMavenProject.AlertHandling#AlertTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Practice1.SeleniumMavenProject.Amazon_Action#Action</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Practice1.SeleniumMavenProject.ClickingOnLinks#ClickonLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Practice1.SeleniumMavenProject.Facebook#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Practice1.SeleniumMavenProject.SpiceJet#Dropdown_Selection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Practice1.SeleniumMavenProject.SwitchingFrames#SwitchFrames</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Practice1.SeleniumMavenProject.SwitchingWindows#SwitchWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
